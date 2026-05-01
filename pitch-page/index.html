@@ -109,4 +109,94 @@
 
         .leverage-note {
             margin-top: 32px;
-            padding-
+            padding-top: 20px;
+            border-top: 1px solid #1a1a1a;
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            padding: 120px 24px;
+            text-align: center;
+            background: #0f0f0f;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--text);
+            color: var(--bg);
+            padding: 20px 48px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 2px;
+            transition: 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        footer {
+            padding: 48px;
+            font-size: 12px;
+            color: #444;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 24px; }
+            .hero { padding: 70px 24px 80px; }
+            .grid-item { border-right: none; padding: 48px 24px; }
+            .grid-item h3 { min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AlertVibe</div>
+    </nav>
+
+    <section class="hero">
+        <h1>Every Minute You Don't Reply,<br>A Ready Buyer Is Gone.</h1>
+        <p>AlertVibe watches your Instagram comments 24/7, alerts you the second a buyer shows up, and posts a reply before they walk away. Fully done for you. Nothing to set up.</p>
+        <a href="mailto:hello@alertvibe.net?subject=AlertVibe%20Inquiry" class="btn">See How It Works</a>
+    </section>
+
+    <section class="grid">
+        <div class="grid-item">
+            <span class="tag">Real-Time Alerts</span>
+            <h3>You Know the Moment a Buyer Comments</h3>
+            <p>When someone asks about price, availability, or how to order, you get an instant alert. Not an hour later. Not buried in notifications. Right now, while they're still there.</p>
+        </div>
+        <div class="grid-item">
+            <span class="tag">Automatic Replies</span>
+            <h3>A Smart Reply Goes Up Before They Leave</h3>
+            <p>AlertVibe posts a natural, on-brand reply under the comment within seconds. It keeps the conversation warm and signals to everyone watching that your business responds fast.</p>
+        </div>
+        <div class="grid-item">
+            <span class="tag">Negative Comment Detection</span>
+            <h3>Problems Caught Before They Spread</h3>
+            <p>Complaints and negative comments get flagged privately so you can handle them before they damage your reputation. No public mess. No missed fires.</p>
+            <div class="leverage-note">✦ Fully done-for-you. We handle the setup.</div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p style="margin-bottom: 32px; color: var(--muted);">Built for med spas, clinics, boutiques, and high-value service businesses where one client is worth thousands.</p>
+        <a href="mailto:hello@alertvibe.net?subject=AlertVibe%20Inquiry" class="btn">Get Started</a>
+    </section>
+
+    <footer>
+        &copy; 2026 AlertVibe. Done-for-you Instagram comment monitoring.
+    </footer>
+
+</body>
+</html>
