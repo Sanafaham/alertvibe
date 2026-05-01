@@ -1,1113 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AlertVibe — Instagram Comment Monitoring Service for Small Businesses</title>
-<meta name="description" content="AlertVibe monitors your Instagram comments 24/7 and alerts you when someone wants to buy, asks about price, or leaves a negative comment. Apply for founding access and try it free for 14 days if your account is a fit.">
-<meta name="keywords" content="Instagram comment monitoring, Instagram buyer intent, done-for-you Instagram service, Instagram comment alerts, Instagram comment intelligence, small business Instagram tool">
-<link rel="canonical" href="https://sanafaham.github.io/alertvibe/pitch-page/">
-<meta property="og:title" content="AlertVibe — Instagram Comment Monitoring for Small Businesses">
-<meta property="og:description" content="Apply for AlertVibe founding access. I’ll review your Instagram comments, show you what you may be missing, and offer a free 14-day trial if your account is a fit.">
-<meta property="og:url" content="https://sanafaham.github.io/alertvibe/pitch-page/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AlertVibe — Instagram Comment Monitoring for Small Businesses">
-<meta name="twitter:description" content="Apply for AlertVibe founding access. I’ll review your Instagram comments, show you what you may be missing, and offer a free 14-day trial if your account is a fit.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --ink: #0f0d0b;
-    --paper: #faf8f4;
-    --warm: #f2ede4;
-    --accent: #c8472b;
-    --gold: #b8924a;
-    --muted: #7a6f65;
-    --rule: #e0d9cf;
-    --dark: #141210;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--paper);
-    font-family: 'DM Sans', sans-serif;
-    color: var(--ink);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  /* NAV */
-  nav {
-    padding: 20px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--rule);
-    position: sticky;
-    top: 0;
-    background: rgba(250,248,244,0.95);
-    backdrop-filter: blur(8px);
-    z-index: 100;
-  }
-
-  .nav-brand {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--ink);
-  }
-
-  .nav-cta {
-    background: var(--accent);
-    color: white;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 10px 24px;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-
-  /* TICKER */
-  .ticker {
-    background: var(--ink);
-    padding: 12px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .ticker-inner {
-    display: inline-block;
-    animation: ticker 30s linear infinite;
-  }
-
-  .ticker-item {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    color: rgba(250,248,244,0.5);
-    margin: 0 32px;
-  }
-
-  .ticker-item span {
-    color: var(--gold);
-    margin-right: 8px;
-  }
-
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  /* HERO */
-  .hero {
-    padding: 100px 48px 88px;
-    text-align: center;
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .hero-tag {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    padding: 6px 16px;
-    border-radius: 100px;
-    margin-bottom: 32px;
-  }
-
-  .hero-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 7vw, 80px);
-    font-weight: 400;
-    line-height: 1.05;
-    color: var(--ink);
-    margin-bottom: 28px;
-  }
-
-  .hero-headline em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero-sub {
-    font-size: 17px;
-    font-weight: 300;
-    color: var(--muted);
-    max-width: 560px;
-    margin: 0 auto 48px;
-    line-height: 1.75;
-  }
-
-  .hero-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .btn-primary {
-    display: inline-block;
-    background: var(--accent);
-    color: white;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    padding: 16px 40px;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-
-  .btn-ghost {
-    display: inline-block;
-    background: transparent;
-    color: var(--ink);
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    padding: 16px 40px;
-    border-radius: 3px;
-    text-decoration: none;
-    border: 1px solid var(--rule);
-  }
-
-  .setup-note {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 4px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* PROBLEM */
-  .problem {
-    background: var(--dark);
-    padding: 88px 48px;
-  }
-
-  .problem-inner {
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .section-tag {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 24px;
-  }
-
-  .problem-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 400;
-    color: var(--paper);
-    line-height: 1.15;
-    margin-bottom: 16px;
-  }
-
-  .problem-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.5);
-    margin-bottom: 56px;
-    max-width: 560px;
-  }
-
-  .problem-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2px;
-  }
-
-  .problem-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 32px 28px;
-  }
-
-  .problem-card-tag {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-
-  .problem-card-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--paper);
-    margin-bottom: 12px;
-    line-height: 1.2;
-  }
-
-  .problem-card-body {
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.5);
-    line-height: 1.7;
-  }
-
-  /* DIFFERENTIATOR */
-  .diff {
-    padding: 88px 48px;
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .diff-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 400;
-    margin-bottom: 48px;
-    line-height: 1.2;
-  }
-
-  .diff-rows {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .diff-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    margin-bottom: 2px;
-  }
-
-  .diff-bad {
-    background: #fdf4f3;
-    border: 1px solid #f5d5d0;
-    padding: 20px 24px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #8a5550;
-    line-height: 1.6;
-  }
-
-  .diff-bad::before {
-    content: '✕  ';
-    color: #c8472b;
-    font-weight: 500;
-  }
-
-  .diff-good {
-    background: #f3f8f4;
-    border: 1px solid #c8deca;
-    padding: 20px 24px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #3d6645;
-    line-height: 1.6;
-  }
-
-  .diff-good::before {
-    content: '✓  ';
-    color: #3d9e52;
-    font-weight: 500;
-  }
-
-  /* FOUR TYPES */
-  .types {
-    background: var(--warm);
-    padding: 88px 48px;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .types-inner {
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .types-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 400;
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .types-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: var(--muted);
-    margin-bottom: 56px;
-  }
-
-  .type-card {
-    border: 1px solid var(--rule);
-    background: var(--paper);
-    margin-bottom: 2px;
-    padding: 36px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: start;
-  }
-
-  .type-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 48px;
-  }
-
-  .type-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 32px;
-    padding: 32px 0;
-    border-top: 1px solid var(--rule);
-  }
-
-  .type-row:last-child {
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .type-row-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--accent);
-    padding-top: 2px;
-  }
-
-  .type-row-content {
-    font-size: 15px;
-    color: var(--ink);
-    opacity: 0.7;
-    line-height: 1.6;
-  }
-
-  .type-number {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    color: var(--muted);
-    margin-bottom: 12px;
-  }
-
-  .type-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .type-desc {
-    font-size: 13px;
-    font-weight: 300;
-    color: var(--muted);
-    margin-bottom: 16px;
-    line-height: 1.7;
-  }
-
-  .type-examples {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .type-example {
-    background: var(--warm);
-    border: 1px solid var(--rule);
-    border-radius: 100px;
-    padding: 4px 14px;
-    font-size: 12px;
-    font-style: italic;
-    color: var(--muted);
-  }
-
-  .type-response-label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-
-  .type-response-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 12px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #3d3530;
-    line-height: 1.6;
-  }
-
-  .type-response-item::before {
-    content: '→';
-    color: var(--accent);
-    flex-shrink: 0;
-    font-weight: 500;
-  }
-
-  /* INBOX MOCKUP */
-  .inbox {
-    padding: 88px 48px;
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .inbox-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 400;
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .inbox-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: var(--muted);
-    margin-bottom: 48px;
-  }
-
-  .inbox-mockup {
-    background: white;
-    border: 1px solid var(--rule);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 40px rgba(0,0,0,0.08);
-  }
-
-  .inbox-header {
-    background: var(--warm);
-    padding: 16px 24px;
-    border-bottom: 1px solid var(--rule);
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-  }
-
-  .inbox-item {
-    padding: 20px 24px;
-    border-bottom: 1px solid var(--rule);
-    display: grid;
-    grid-template-columns: 32px 1fr;
-    gap: 16px;
-    align-items: start;
-  }
-
-  .inbox-item:last-child { border-bottom: none; }
-
-  .inbox-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    flex-shrink: 0;
-  }
-
-  .inbox-icon.hot { background: #fef3f0; }
-  .inbox-icon.opp { background: #f0f7ff; }
-  .inbox-icon.warn { background: #fff8f0; }
-
-  .inbox-subject {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-
-  .inbox-preview {
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  .inbox-time {
-    font-size: 11px;
-    color: var(--rule);
-    margin-top: 4px;
-  }
-
-  /* WHO */
-  .who {
-    background: var(--dark);
-    padding: 88px 48px;
-  }
-
-  .who-inner {
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .who-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 400;
-    color: var(--paper);
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .who-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.4);
-    margin-bottom: 56px;
-  }
-
-  .who-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2px;
-  }
-
-  .who-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 28px 24px;
-  }
-
-  .who-emoji {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-
-  .who-title {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--paper);
-    margin-bottom: 8px;
-  }
-
-  .who-list {
-    font-size: 12px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.4);
-    line-height: 1.8;
-  }
-
-  /* PRICING */
-  .pricing {
-    padding: 88px 48px;
-    max-width: 640px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .pricing-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 400;
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .pricing-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: var(--muted);
-    margin-bottom: 48px;
-  }
-
-  .pricing-card {
-    background: var(--ink);
-    border-radius: 8px;
-    padding: 56px 48px;
-    text-align: left;
-  }
-
-  .pricing-tag {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
-  }
-
-  .pricing-amount {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
-    font-weight: 600;
-    color: var(--paper);
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-
-  .pricing-amount span {
-    font-size: 22px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.4);
-  }
-
-  .pricing-early-adopter {
-    color: #b8924a;
-    font-size: 13px;
-    margin: 12px 0;
-    padding: 8px 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
-  }
-
-  .pricing-note {
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.35);
-    margin-bottom: 40px;
-  }
-
-  .pricing-list {
-    list-style: none;
-    margin-bottom: 40px;
-  }
-
-  .pricing-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.7);
-    line-height: 1.6;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-
-  .pricing-list li:last-child { border-bottom: none; }
-
-  .pricing-list li::before {
-    content: '✓';
-    color: #3d9e52;
-    font-weight: 500;
-    flex-shrink: 0;
-  }
-
-  .pricing-cta {
-    display: block;
-    background: var(--accent);
-    color: white;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    padding: 18px 40px;
-    border-radius: 3px;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .pricing-setup {
-    margin-top: 16px;
-    font-size: 12px;
-    font-weight: 300;
-    color: rgba(250,248,244,0.25);
-    text-align: center;
-  }
-
-  /* CLOSING */
-  .closing {
-    background: var(--accent);
-    padding: 100px 48px;
-    text-align: center;
-  }
-
-  .closing-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(36px, 6vw, 64px);
-    font-weight: 400;
-    color: white;
-    line-height: 1.1;
-    max-width: 680px;
-    margin: 0 auto 16px;
-  }
-
-  .closing-sub {
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 48px;
-  }
-
-  .closing-cta {
-    display: inline-block;
-    background: white;
-    color: var(--accent);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    padding: 18px 48px;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 28px 48px;
-    border-top: 1px solid var(--rule);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .footer-brand {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .footer-note {
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--muted);
-  }
-
-  @media (max-width: 640px) {
-    nav, .hero, .problem, .diff, .types, .inbox, .who, .pricing, .closing, footer {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-    .type-card { grid-template-columns: 1fr; gap: 24px; }
-    .diff-row { grid-template-columns: 1fr; }
-    .hero-buttons { flex-direction: column; align-items: center; }
-  }
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EYMSB0CVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3EYMSB0CVV');
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertVibe | Global Instagram Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --muted: #a0a0a0;
+            --accent: #b8924a;
+            --border: #222222;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        nav {
+            padding: 32px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 24px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin-bottom: 32px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: clamp(18px, 2vw, 22px);
+            max-width: 600px;
+            margin: 0 auto 48px;
+            font-weight: 300;
+        }
+
+        /* Multilingual Proof Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            border-top: 1px solid var(--border);
+        }
+
+        .grid-item {
+            padding: 64px 48px;
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .grid-item:last-child { border-right: none; }
+
+        .tag {
+            color: var(--accent);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .grid-item h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .grid-item p {
+            color: var(--muted);
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: 120px 24px;
+            text-align: center;
+            background: #0f0f0f;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--text);
+            color: var(--bg);
+            padding: 20px 48px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 2px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        footer {
+            padding: 48px;
+            font-size: 12px;
+            color: #444;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 24px; }
+            .grid-item { border-right: none; }
+        }
+    </style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-brand">AlertVibe</div>
-<a href="mailto:hello@alertvibe.net?subject=AlertVibe%20Setup%20Request&body=Hi,%20I%20would%20like%20to%20start%20AlertVibe.%0A%0AInstagram%20handle:%0A%0ABusiness%20type:%0A%0ABest%20email:" class="nav-cta">Request Setup →</a>
-</nav>
+    <nav>
+        <div class="logo">AlertVibe</div>
+    </nav>
 
-<div class="ticker">
-  <div class="ticker-inner">
-    <span class="ticker-item"><span>✦</span> Boutiques</span>
-    <span class="ticker-item"><span>✦</span> Creators & Influencers</span>
-    <span class="ticker-item"><span>✦</span> Beauty Brands</span>
-    <span class="ticker-item"><span>✦</span> Clinics & Spas</span>
-    <span class="ticker-item"><span>✦</span> Online Stores</span>
-    <span class="ticker-item"><span>✦</span> Fitness Studios</span>
-    <span class="ticker-item"><span>✦</span> Designers</span>
-    <span class="ticker-item"><span>✦</span> Personal Brands</span>
-    <span class="ticker-item"><span>✦</span> Restaurants</span>
-    <span class="ticker-item"><span>✦</span> Coaches</span>
-    <span class="ticker-item"><span>✦</span> Handmade Sellers</span>
-    <span class="ticker-item"><span>✦</span> Startups</span>
-    <span class="ticker-item"><span>✦</span> Boutiques</span>
-    <span class="ticker-item"><span>✦</span> Creators & Influencers</span>
-    <span class="ticker-item"><span>✦</span> Beauty Brands</span>
-    <span class="ticker-item"><span>✦</span> Clinics & Spas</span>
-    <span class="ticker-item"><span>✦</span> Online Stores</span>
-    <span class="ticker-item"><span>✦</span> Fitness Studios</span>
-    <span class="ticker-item"><span>✦</span> Designers</span>
-    <span class="ticker-item"><span>✦</span> Personal Brands</span>
-    <span class="ticker-item"><span>✦</span> Restaurants</span>
-    <span class="ticker-item"><span>✦</span> Coaches</span>
-    <span class="ticker-item"><span>✦</span> Handmade Sellers</span>
-    <span class="ticker-item"><span>✦</span> Startups</span>
-  </div>
-</div>
+    <section class="hero">
+        <h1>Your Global Sales<br>Don't Speak English.</h1>
+        <p>The first Neural Response Agent that detects intent in 6+ languages and responds in your brand voice—within 60 seconds.</p>
+        <a href="mailto:hello@alertvibe.net?subject=Intelligence Audit Request" class="btn">Request Intelligence Audit</a>
+    </section>
 
-<section class="hero">
-  <div class="hero-tag">Instagram Comment Intelligence</div>
-  <h1 class="hero-headline">Your comments are turning into sales.<br>You’re just missing them.</h1>
-  <p class="hero-sub">AlertVibe watches every comment on your Instagram posts. Buying questions get replied to. Complaints get handled. Compliments get acknowledged. Nothing goes unanswered.</p>
-  <div class="hero-buttons">
-   <a href="mailto:hello@alertvibe.net?subject=AlertVibe%20Setup%20Request&body=Hi,%20I%20would%20like%20to%20get%20AlertVibe%20set%20up%20for%20my%20Instagram.%20My%20handle%20is:%20" class="btn-primary">Request Setup →</a>
-    <div class="setup-note">Request setup via email</div>
-    <a href="#how-it-works" class="btn-ghost">See how it works</a>
-  </div>
-</section>
-
-<section class="problem">
-  <div class="problem-inner">
-    <div class="section-tag">The Problem</div>
-    <h2 class="problem-headline">Instagram is where your money is.<br>And it's slipping through the cracks.</h2>
-    <p class="problem-sub">Every day, comments land on your posts — and most of them get buried. It's not a content problem. It's a comment problem.</p>
-    <div class="problem-cards">
-      <div class="problem-card">
-        <div class="problem-card-tag">Lost Sale</div>
-        <div class="problem-card-title">Someone asked about your price.</div>
-        <div class="problem-card-body">You never saw it. They waited a few hours, then bought from someone else who replied faster.</div>
-      </div>
-      <div class="problem-card">
-        <div class="problem-card-tag">Missed Opportunity</div>
-        <div class="problem-card-title">A brand offered you a collab.</div>
-        <div class="problem-card-body">It got lost in the noise. Someone else with fewer followers got the deal.</div>
-      </div>
-      <div class="problem-card">
-        <div class="problem-card-tag">Reputation Damage</div>
-        <div class="problem-card-title">A customer complained publicly.</div>
-        <div class="problem-card-body">No one responded. Your followers saw it and started wondering if you're even a real business.</div>
-      </div>
-      <div class="problem-card">
-        <div class="problem-card-tag">Missed Connection</div>
-        <div class="problem-card-title">Someone loved your post.</div>
-        <div class="problem-card-body">They left a compliment and got nothing back. That's a follower who could have become a customer, feeling ignored.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="diff" id="how-it-works">
-  <div class="section-tag">What Makes AlertVibe Different</div>
-  <h2 class="diff-headline">Not a bot. A comment intelligence system.</h2>
-  <div class="diff-rows">
-    <div class="diff-row">
-      <div class="diff-bad">Other tools reply to every comment the same way, spam your followers, look robotic and desperate.</div>
-      <div class="diff-good">AlertVibe only acts when something important happens. Nothing gets missed. Nothing looks like spam.</div>
-    </div>
-    <div class="diff-row">
-      <div class="diff-bad">Negative comments get ignored or buried while your reputation takes the hit.</div>
-      <div class="diff-good">Negative comments get a calm public reply posted automatically and you get an instant email alert so you can follow up privately.</div>
-    </div>
-    <div class="diff-row">
-      <div class="diff-bad">Generic tools don't understand what type of comment just landed or what to do about it.</div>
-      <div class="diff-good">AlertVibe alerts you in real time so you can respond fast when it counts most.</div>
-    </div>
-  </div>
-</section>
-
-<section class="types">
-  <div class="types-inner">
-    <div class="section-tag">Four Comment Types. Four Smart Responses.</div>
-    <h2 class="types-headline">AlertVibe knows what type of comment just landed — and what to do about it.</h2>
-
-    <div class="type-card">
-      <div>
-        <div class="type-number">01 — Sales Opportunity</div>
-        <div class="type-title">Someone wants to buy.</div>
-        <div class="type-desc">The highest value comment type. These are buyers in the moment. Miss them and the sale is gone.</div>
-        <div class="type-examples">
-          <span class="type-example">"How much is this?"</span>
-          <span class="type-example">"Do you ship?"</span>
-          <span class="type-example">"Where can I order?"</span>
-          <span class="type-example">"I want this"</span>
-          <span class="type-example">"Is this available?"</span>
-          <span class="type-example">"How do I book?"</span>
+    <section class="grid">
+        <div class="grid-item">
+            <span class="tag">Linguistic Mastery</span>
+            <h3>Native Nuance</h3>
+            <p>Direct de-escalation and lead capture in Arabic, Russian, Turkish, Spanish, French, and Italian. No translation lag. No robotic tone.</p>
         </div>
-      </div>
-      <div>
-        <div class="type-response-label">What AlertVibe does</div>
-        <div class="type-response-item">Sends you an instant private email alert</div>
-        <div class="type-response-item">Posts a warm public reply directing the person to DM you so the lead stays warm while you prepare your response</div>
-        <div class="type-response-item">Tracks buying comments and sends you a simple weekly report</div>
-      </div>
-    </div>
-
-    <div class="type-card">
-      <div>
-        <div class="type-number">02 — Business Opportunity</div>
-        <div class="type-title">Someone wants to partner.</div>
-        <div class="type-desc">Collabs, brand deals, sponsorships. Easy to miss because they do not look urgent. But the person is talking to multiple accounts at once.</div>
-        <div class="type-examples">
-          <span class="type-example">"Collaboration?"</span>
-          <span class="type-example">"Brand deal"</span>
-          <span class="type-example">"Sponsorship"</span>
-          <span class="type-example">"Ambassador"</span>
-          <span class="type-example">"Wholesale"</span>
-          <span class="type-example">"Partnership"</span>
+        <div class="grid-item">
+            <span class="tag">Subtext Analysis</span>
+            <h3>Sentiment Decoding</h3>
+            <p>Our brain differentiates between a casual 🔥 and a high-intent pricing inquiry instantly, mapping emojis to actual sales workflows.</p>
         </div>
-      </div>
-      <div>
-        <div class="type-response-label">What AlertVibe does</div>
-        <div class="type-response-item">Sends you an instant private email alert</div>
-        <div class="type-response-item">Posts a public reply acknowledging the opportunity</div>
-      </div>
-    </div>
-
-    <div class="type-card">
-      <div>
-        <div class="type-number">03 — Negative or Risk Comment</div>
-        <div class="type-title">Your reputation is on the line.</div>
-        <div class="type-desc">Complaints, bad reviews, scam accusations. One unanswered negative comment tells every new visitor the same story.</div>
-        <div class="type-examples">
-          <span class="type-example">"Scam"</span>
-          <span class="type-example">"Never received"</span>
-          <span class="type-example">"Fake page"</span>
-          <span class="type-example">"Bad quality"</span>
-          <span class="type-example">"No response"</span>
+        <div class="grid-item">
+            <span class="tag">Zero Leakage</span>
+            <h3>Revenue Recovery</h3>
+            <p>Stop losing international customers to slow response times. AlertVibe ensures every global comment becomes a warm lead.</p>
         </div>
-      </div>
-      <div>
-        <div class="type-response-label">What AlertVibe does</div>
-        <div class="type-response-item">Sends you an instant private email alert</div>
-        <div class="type-response-item">Posts a calm public reply automatically so you can follow up privately</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="type-card">
-      <div>
-        <div class="type-number">04 — Compliments & Engagement</div>
-        <div class="type-title">Someone loves what you posted.</div>
-        <div class="type-desc">Every unanswered compliment is a missed connection. AlertVibe replies warmly so your account always looks active and engaged, even when you're not online.</div>
-        <div class="type-examples">
-          <span class="type-example">"Love this"</span>
-          <span class="type-example">"This is so pretty"</span>
-          <span class="type-example">"Obsessed"</span>
-          <span class="type-example">"Goals"</span>
-        </div>
-      </div>
-      <div>
-        <div class="type-response-label">What AlertVibe does</div>
-        <div class="type-response-item">Posts a warm genuine reply automatically so no comment goes ignored</div>
-      </div>
-    </div>
+    <section class="cta-section">
+        <p style="margin-bottom: 32px; color: var(--muted);">Available for high-end boutiques and global creators.</p>
+        <a href="mailto:hello@alertvibe.net?subject=Intelligence Audit Request" class="btn">Apply for Access</a>
+    </section>
 
-  </div>
-</section>
-
-<section class="types">
-  <div class="types-inner">
-    <div class="section-tag">Built for any language, any audience</div>
-    <h2>Your followers don't all speak the same language. AlertVibe doesn't either.</h2>
-    <p>Most comment tools assume everyone speaks English. AlertVibe doesn't. It detects and replies in the language of the comment, not the language of your account.</p>
-    <p>A Turkish boutique with Arabic-speaking followers. A French skincare brand with Italian commenters. An English account where half the buying questions come in Spanish. AlertVibe handles all of it, automatically.</p>
-
-           <div class="type-list">
-          <div class="type-row">
-            <div class="type-row-label">Replies in the commenter's language</div>
-            <div class="type-row-content">Someone comments in Arabic, they get a reply in Arabic. Someone comments in French, they get French back. No manual translation needed.</div>
-          </div>
-          <div class="type-row">
-            <div class="type-row-label">Not locked to any language</div>
-            <div class="type-row-content">AlertVibe works for accounts in any country, selling to any audience. It is not an English-only tool.</div>
-          </div>
-          <div class="type-row">
-            <div class="type-row-label">Tested. And still expanding.</div>
-                         <div class="type-row-content">AlertVibe has been tested across multiple languages and keeps expanding. If your audience speaks it, AlertVibe can work with it.</div>
-          </div>
-        </div>
-
-
-  </div>
-</section>
-
- <section class="inbox">
-  <div class="section-tag">What You Get</div>
-  <h2 class="inbox-headline">Your only job is to check your email.</h2>
-  <p class="inbox-sub">AlertVibe uses AI to read and understand every comment. It does not rely on keyword matching. It understands what the person actually means and responds instantly.</p>
-
-  <div class="inbox-mockup">
-    <div class="inbox-header">AlertVibe Inbox</div>
-    <div class="inbox-item">
-      <div class="inbox-icon hot">🔥</div>
-      <div>
-        <div class="inbox-subject">AlertVibe Alert: New Lead Detected</div>
-        <div class="inbox-preview">"How much for the mini set? Do you ship internationally?" — public reply posted. They're waiting for you.</div>
-        <div class="inbox-time">2 minutes ago · instagram.com/yourpost</div>
-      </div>
-    </div>
-    <div class="inbox-item">
-      <div class="inbox-icon opp">✦</div>
-      <div>
-        <div class="inbox-subject">AlertVibe Alert: Business Opportunity Detected</div>
-        <div class="inbox-preview">"We'd love to discuss a brand collaboration with you 🙌" — public reply posted. Check your DMs.</div>
-        <div class="inbox-time">47 minutes ago · instagram.com/yourpost</div>
-      </div>
-    </div>
-    <div class="inbox-item">
-      <div class="inbox-icon warn">⚠️</div>
-      <div>
-        <div class="inbox-subject">AlertVibe Alert: Negative Comment Detected</div>
-        <div class="inbox-preview">"My order still hasn't arrived and no one is responding to me." — Calm public reply posted. Private alert sent to you.</div>
-        <div class="inbox-time">1 hour ago · instagram.com/yourpost</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="who">
-  <div class="who-inner">
-    <div class="section-tag">Who AlertVibe Is For</div>
-    <h2 class="who-headline">If you post on Instagram and people comment — AlertVibe is for you.</h2>
-    <p class="who-sub">Works from around 1,000 followers and up.</p>
-    <div class="who-grid">
-      <div class="who-card">
-        <div class="who-emoji">🛍️</div>
-        <div class="who-title">Small Businesses</div>
-        <div class="who-list">Boutiques, fashion brands, beauty brands, online stores, local businesses.</div>
-      </div>
-      <div class="who-card">
-        <div class="who-emoji">💆</div>
-        <div class="who-title">Service Businesses</div>
-        <div class="who-list">Clinics, spas, salons, coaches, consultants, fitness studios, restaurants.</div>
-      </div>
-      <div class="who-card">
-        <div class="who-emoji">📲</div>
-        <div class="who-title">Creators & Influencers</div>
-        <div class="who-list">Content creators, digital creators, public figures, lifestyle and beauty creators.</div>
-      </div>
-      <div class="who-card">
-        <div class="who-emoji">🎨</div>
-        <div class="who-title">Artists & Makers</div>
-        <div class="who-list">Designers, handmade sellers, personal brands, startups, anyone building on Instagram.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pricing" id="pricing">
- <div class="section-tag">Founding Access</div>
-  <h2 class="pricing-headline">Try AlertVibe.<br>See what you’ve been missing.</h2>
-  <p class="pricing-sub">Apply for founding access. I’ll review your account first. No payment required to apply.</p>
-  <div class="pricing-card">
-    <div class="pricing-tag">Done-for-you</div>
-   <div class="pricing-amount">Apply Only</div>
-   
-    <div class="pricing-note">Spots are limited. Approval required before setup.</div>
-    <ul class="pricing-list">
-      <li>Sales opportunity detection + instant email alert + warm public reply</li>
-      <li>Business opportunity detection + instant email alert + public reply</li>
-      <li>Negative comment detection + calm public reply + instant private email alert</li>
-      <li>Compliment detection + warm public reply so no comment goes unanswered</li>
-      <li>Comments scanned every 15 minutes, 24/7</li>
-      <li>Full setup done for you — no app, no tech, no learning curve</li>
-      <li>Works from 1,000 followers and up</li>
-    </ul>
-<a href="mailto:hello@alertvibe.net?subject=AlertVibe%20Application&body=Hi,%20I%20want%20to%20apply%20for%20AlertVibe.%0A%0AInstagram%20handle:%0ABusiness%20type:%0ABest%20email:%0AMonthly%20comments%20estimate:" class="pricing-cta">Apply for Founding Access →</a>
-<div class="pricing-setup">Setup is done within 24 hours.</div>
-  </div>
-</section>
-
-
-
-<footer>
-  <div class="footer-brand">AlertVibe</div>
-  <div class="footer-note">Instagram comment intelligence, done for you</div>
-</footer>
+    <footer>
+        &copy; 2026 AlertVibe. Instagram Comment Intelligence.
+    </footer>
 
 </body>
 </html>
