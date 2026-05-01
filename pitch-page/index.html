@@ -73,6 +73,7 @@
             border-bottom: 1px solid var(--border);
             display: flex;
             flex-direction: column;
+            min-height: 450px;
         }
 
         .grid-item:last-child { border-right: none; }
@@ -87,15 +88,16 @@
             height: 20px;
         }
 
-        /* FIXED HEIGHT FOR HEADERS: This ensures the paragraphs below are perfectly aligned */
+        /* FIXED: Increased height and line-height so "Borders" and "Governance" don't overlap */
         .grid-item h3 {
             font-size: 24px;
             font-weight: 400;
             margin-bottom: 32px; 
-            height: 64px; /* Adjust this if you change font sizes */
+            height: 100px; 
+            line-height: 1.4;
             display: flex;
             align-items: flex-start;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .grid-item p {
@@ -150,7 +152,7 @@
 
         @media (max-width: 768px) {
             nav { padding: 24px; }
-            .grid-item { border-right: none; padding: 48px 24px; }
+            .grid-item { border-right: none; padding: 48px 24px; min-height: auto; }
             .grid-item h3 { height: auto; margin-bottom: 16px; }
         }
     </style>
