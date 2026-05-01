@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertVibe | Global Response Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --muted: #a0a0a0;
+            --accent: #b8924a;
+            --border: #222222;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        nav {
+            padding: 32px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 160px 24px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin-bottom: 32px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: clamp(18px, 2vw, 22px);
+            max-width: 600px;
+            margin: 0 auto 48px;
+            font-weight: 300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            border-top: 1px solid var(--border);
+        }
+
+        .grid-item {
+            padding: 64px 48px;
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .grid-item:last-child { border-right: none; }
+
+        .tag {
+            color: var(--accent);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .grid-item h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .grid-item p {
+            color: var(--muted);
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .cta-section {
+            padding: 120px 24px;
+            text-align: center;
+            background: #0f0f0f;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--text);
+            color: var(--bg);
+            padding: 20px 48px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 2px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        footer {
+            padding: 48px;
+            font-size: 12px;
+            color: #444;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 24px; }
+            .grid-item { border-right: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AlertVibe Global</div>
+    </nav>
+
+    <section class="hero">
+        <h1>Global Revenue<br>Doesn't Wait.</h1>
+        <p>A Neural Response Agent that eliminates language barriers. We detect intent in 6+ languages and respond in your brand voice—within 60 seconds.</p>
+        <a href="mailto:hello@alertvibe.net?subject=Intelligence Audit Request" class="btn">Request Intelligence Audit</a>
+    </section>
+
+    <section class="grid">
+        <div class="grid-item">
+            <span class="tag">Linguistic Mastery</span>
+            <h3>Native Tone</h3>
+            <p>Direct de-escalation and lead capture in Arabic, Russian, Turkish, Spanish, French, and Italian. No translation lag. No robotic presence.</p>
+        </div>
+        <div class="grid-item">
+            <span class="tag">Subtext Analysis</span>
+            <h3>Emoji Decoding</h3>
+            <p>Our brain maps sentiment and emojis to actual sales workflows, distinguishing casual engagement from high-intent buyers instantly.</p>
+        </div>
+        <div class="grid-item">
+            <span class="tag">Zero Leakage</span>
+            <h3>Instant Conversion</h3>
+            <p>Capturing leads when intent is highest. AlertVibe ensures every global comment is handled within 1 minute, 24/7.</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p style="margin-bottom: 32px; color: var(--muted);">Available for high-end boutiques and global luxury personas.</p>
+        <a href="mailto:hello@alertvibe.net?subject=Intelligence Audit Request" class="btn">Apply for Global Access</a>
+    </section>
+
+    <footer>
+        &copy; 2026 AlertVibe. Neural Comment Intelligence.
+    </footer>
+
+</body>
+</html>
