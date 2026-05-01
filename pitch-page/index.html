@@ -49,7 +49,7 @@
             font-size: clamp(40px, 8vw, 80px);
             font-weight: 600;
             letter-spacing: -0.04em;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 32px;
         }
 
@@ -73,6 +73,7 @@
             border-bottom: 1px solid var(--border);
             display: flex;
             flex-direction: column;
+            min-height: 400px; /* Ensures boxes stay aligned */
         }
 
         .grid-item:last-child { border-right: none; }
@@ -86,10 +87,14 @@
             display: block;
         }
 
+        /* Fixed heading height to ensure paragraph alignment across all boxes */
         .grid-item h3 {
             font-size: 24px;
             font-weight: 400;
-            margin-bottom: 16px;
+            margin-bottom: 32px; 
+            min-height: 60px; 
+            display: flex;
+            align-items: flex-start;
         }
 
         .grid-item p {
@@ -143,7 +148,8 @@
 
         @media (max-width: 768px) {
             nav { padding: 24px; }
-            .grid-item { border-right: none; }
+            .grid-item { border-right: none; padding: 48px 24px; }
+            .grid-item h3 { min-height: auto; }
         }
     </style>
 </head>
@@ -154,7 +160,7 @@
     </nav>
 
     <section class="hero">
-        <h1>Your Global Sales<br>Don't Speak English.</h1>
+        <h1>Own Your Audience.<br>In Every Language.</h1>
         <p>The first Global Response Service that captures 100% of your audience interaction. We manage your primary language and any foreign inquiry with equal native-level precision—responding to every comment within 60 seconds.</p>
         <a href="mailto:hello@alertvibe.net?subject=Intelligence%20Audit%20Request" class="btn">Request Intelligence Audit</a>
     </section>
@@ -163,7 +169,7 @@
         <div class="grid-item">
             <span class="tag">Any Language, Any Origin</span>
             <h3>Universal Native Response</h3>
-            <p>Our service is tailored to your primary audience—whether you operate in Turkish, Spanish, or Arabic. If a follower comments in a different language, we detect it instantly and respond in their native tongue to secure the lead.</p>
+            <p>Our service is tailored to your chosen primary language. If a follower comments in a different tongue, we detect it instantly and respond natively—ensuring a Turkish account can capture an Arabic lead as easily as a local one.</p>
         </div>
         <div class="grid-item">
             <span class="tag">Total Interaction Coverage</span>
